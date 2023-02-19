@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <p class="title">SPLI<br>TTER</p>
+    <div class="card">
+      <div class="text-section">
+        <label for="bill">Bill</label>
+        <input type="number" id="bill" placeholder="0" name="bill_amount">
+        <div class="tip-section">
+          <label for="grid">Select Tip %</label>
+          <div id="grid">
+            <div class="numbers">5 %</div>
+            <div class="numbers">10 %</div>
+            <div class="numbers">15 %</div>
+            <div class="numbers">25 %</div>
+            <div class="numbers">50 %</div>
+            <input class="custom" type="number" id="custom" placeholder="Custom" name="custom_amount">
+          </div>
+        </div>
+        <div class="people-label">
+          <label for="people">Number of People</label>
+          <label class="error-label hide" id="error-label" for="people">Invalid Number</label>
+        </div>
+        <input type="number" id="people" placeholder="0" name="people_number">
+      </div>
+      <div class="calculator">
+        <div class="tip-amount">
+          <div class="tip-amount-text">
+            <p class="per-person-amount-text">Tip Amount<br><span class="light">/ person</span></p>
+            <p id="amount" class="per-person-amount">$0.00</p>
+          </div>
+          <div class="tip-amount-text total">
+            <p class="per-person-amount-text">Total<br><span class="light">/ person</span></p>
+            <p id="cost" class="per-person-amount">$0.00</p>
+          </div>
+        </div>
+        <button id="reset" class="btn">RESET</button>
+      </div>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
